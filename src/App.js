@@ -16,6 +16,8 @@ function App() {
   function handleLogin() {
     let loginEmail = document.getElementById("typeEmailX").value;
     let loginPass = document.getElementById("typePasswordX").value;
+    let hashmap = returnHash();
+    console.log(hashmap);
 
     if (
       loginEmail === localStorage.getItem("Email") &&
